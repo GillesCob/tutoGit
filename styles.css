@@ -1,0 +1,128 @@
+/* ===== Couleurs personnalisées ===== */
+:root {
+    --primary-color: #3CB043;
+    --secondary-color: #00BFFF;
+    --light-color: #80808080;
+    --dark-color: #222;
+    --accent-color: #66bb6a;
+    --text-color: #333;
+  }
+  
+  /* ===== Global ===== */
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: var(--text-color);
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Navbar ===== */
+  .navbar {
+    background-color: var(--primary-color);
+  }
+  .navbar-brand, .nav-link {
+    color: var(--text-color)
+  }
+  .nav-link:hover {
+    color: var(--accent-color) !important;
+  }
+  
+  /* ===== Header / Hero ===== */
+  #header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  #header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #header p {
+    font-size: 1.2rem;
+  }
+  
+  /* ===== Sections générales ===== */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* ===== Titres de section ===== */
+  section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+  }
+  
+  /* ===== Cards Bootstrap ===== */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .card .card-title {
+    color: var(--primary-color);
+  }
+  .card .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  .card .btn-primary:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* ===== Formulaire de contact ===== */
+  form input, form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  form button {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  form button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* ===== Modale personnalisée ===== */
+  .modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom: none;
+  }
+  .modal-footer .btn-secondary {
+    background-color: var(--secondary-color);
+    border: none;
+  }
+  .modal-footer .btn-secondary:hover {
+    background-color: var(--accent-color);
+  }
+
+  #produit .card-body {
+    min-height: 150px;
+  }
+  
+  
